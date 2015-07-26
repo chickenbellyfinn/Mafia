@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="com.chickenbellyfinn.mafia.GameSettingsActivity"
+    android:orientation="vertical"
+    android:background="#EDE7F6">
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#7E57C2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MAFIA"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="38sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:id="@+id/roleLayout">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:id="@+id/next"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <com.mattkula.secrettextview.SecretTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAFIA"
+            android:textSize="36sp"
+            android:id="@+id/secret"
+            android:textColor="#9575CD"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hold to Show"
+            android:id="@+id/hold"
+            android:layout_above="@+id/next"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp" />
+    </RelativeLayout>
+
+</LinearLayout>
